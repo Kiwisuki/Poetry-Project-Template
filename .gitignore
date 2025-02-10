@@ -9,6 +9,7 @@ env/
 .venv
 venv
 poetry.lock
+.poetry
 
 # Unit test / coverage reports
 .coverage

@@ -2,6 +2,7 @@ import logging
 
 LOGGER = logging.getLogger(__name__)
 
+
 def setup_logging() -> logging.Logger:
     """Set up logging configuration."""
     logging.basicConfig(
@@ -9,6 +10,7 @@ def setup_logging() -> logging.Logger:
         level=logging.INFO,
         handlers=[logging.StreamHandler()],
     )
+
 
 def load_environment_variables() -> str:
     """Load environment variables from .env file."""
@@ -24,6 +26,7 @@ def load_environment_variables() -> str:
         return (
             "Can't import dotenv & load .env, this is expected if running via Docker."
         )
+
 
 def initialize() -> None:
     """Initialize the application."""
